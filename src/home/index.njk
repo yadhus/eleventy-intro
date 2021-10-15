@@ -8,7 +8,9 @@ layout: home.njk
 <ul>
     {% for card in collections.card %}
     <li>
-        <a href={{card.data.url}}>{{ card.data.title }}</a>
+        <a href={{card.url}}>{{ card.data.title }}</a>
     </li>
     {% endfor %}
 </ul>
+
+<a href="/">Main</a>
