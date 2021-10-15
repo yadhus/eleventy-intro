@@ -1,0 +1,14 @@
+---
+title: Home
+layout: home.njk
+---
+
+<h1>Hello from {{title}}</h1>
+
+<ul>
+    {% for card in collections.card %}
+    <li>
+        <a href={{card.data.url}}>{{ card.data.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
